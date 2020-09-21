@@ -5,28 +5,28 @@
 <title>【算法】排序算法-冒泡排序和选择排序 - Terence 记录他成长的地方</title>
 <base href="/">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="https://terence.segofun.com/2020/09/21/2020-09-21-sort-1/">
+<link rel="canonical" href="https://terence.segofun.com/2020/09/21/2020-09-21-01/">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
 <meta name="description" content="排序算法-冒泡排序和选择排序  1. 背景 由于冒泡排序和选择排序的思想很类似，所以，在网上会有很多把选择排序当做冒泡排序的例子 2. 冒泡排序的思想 每一次排序过程，通过相邻元素的交换，将当前没有排好序中的最大（小）移到数组的最右（左）端  3.选择排序的思想 每一次排序过程，我们获取当前没有排好序中的最大（小）的元素和数组最右（左）端的元素交换，循环这个过程即可实现对整个数组排序  4.冒泡的">
 <meta property="og:type" content="website">
 <meta property="og:title" content="【算法】排序算法-冒泡排序和选择排序">
-<meta property="og:url" content="https://terence.segofun.com/2020/09/21/2020-09-21-sort-1/index.html">
+<meta property="og:url" content="https://terence.segofun.com/2020/09/21/2020-09-21-01/index.html">
 <meta property="og:site_name" content="Terence 记录他成长的地方">
 <meta property="og:description" content="排序算法-冒泡排序和选择排序  1. 背景 由于冒泡排序和选择排序的思想很类似，所以，在网上会有很多把选择排序当做冒泡排序的例子 2. 冒泡排序的思想 每一次排序过程，通过相邻元素的交换，将当前没有排好序中的最大（小）移到数组的最右（左）端  3.选择排序的思想 每一次排序过程，我们获取当前没有排好序中的最大（小）的元素和数组最右（左）端的元素交换，循环这个过程即可实现对整个数组排序  4.冒泡的">
 <meta property="og:locale">
 <meta property="og:image" content="https://avatars0.githubusercontent.com/u/27192296?s=400&v=4">
 <meta property="article:published_time" content="2020-09-21T02:12:32.000Z">
-<meta property="article:modified_time" content="2020-09-21T02:26:43.124Z">
+<meta property="article:modified_time" content="2020-09-21T05:38:16.659Z">
 <meta property="article:author" content="Terence.Sun">
 <meta property="article:tag" content="algorithm">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://avatars0.githubusercontent.com/u/27192296?s=400&v=4">
-<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"Terence.Sun","description":"Creator","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"},"url":"https://terence.segofun.com","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4","description":"","author":{"@type":"Person","name":"Terence.Sun","description":"Creator","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"},"inLanguage":{"@type":"Language","alternateName":"en"}},{"@context":"http://schema.org","@type":"Article","articleSection":"","url":"https://terence.segofun.com/2020/09/21/2020-09-21-sort-1/","headline":"【算法】排序算法-冒泡排序和选择排序","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4","datePublished":"2020-09-21T02:12:32.000Z","dateModified":"2020-09-21T02:26:43.124Z","keywords":"algorithm","description":"","publisher":{"@type":"Organization","name":"Terence 记录他成长的地方","logo":{"@type":"ImageObject","url":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"}},"author":{"@type":"Person","name":"Terence.Sun","description":"Creator","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"},"inLanguage":{"@type":"Language","alternateName":"en"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://terence.segofun.com/2020/09/21/2020-09-21-sort-1/"}}]</script>
+<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"Terence.Sun","description":"Creator","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"},"url":"https://terence.segofun.com","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4","description":"","author":{"@type":"Person","name":"Terence.Sun","description":"Creator","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"},"inLanguage":{"@type":"Language","alternateName":"en"}},{"@context":"http://schema.org","@type":"Article","articleSection":"","url":"https://terence.segofun.com/2020/09/21/2020-09-21-01/","headline":"【算法】排序算法-冒泡排序和选择排序","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4","datePublished":"2020-09-21T02:12:32.000Z","dateModified":"2020-09-21T05:38:16.659Z","keywords":"algorithm","description":"","publisher":{"@type":"Organization","name":"Terence 记录他成长的地方","logo":{"@type":"ImageObject","url":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"}},"author":{"@type":"Person","name":"Terence.Sun","description":"Creator","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"},"inLanguage":{"@type":"Language","alternateName":"en"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://terence.segofun.com/2020/09/21/2020-09-21-01/"}}]</script>
 <link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet"><link href="/styles.43478ea7e28ed563c48b.css" rel="stylesheet">
 <link rel="stylesheet" href="/theme.9a110498fb03f1829589.css" is="theme">
 
-<script src="/config.b04d46ee2bbd0d4378b2.js"></script>
+<script src="/config.bdfa9b275c79a3b83907.js"></script>
 
 <meta name="generator" content="Hexo 5.1.1"></head>
 <body lang="en">
