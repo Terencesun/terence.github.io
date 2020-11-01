@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>【golang练手】 日志收集程序 - Terence 记录他成长的地方</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="https://terence.segofun.com/2020/11/01/2020-11-01-2/">
+<link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="【golang练手】 日志收集程序  1. 目录  目录结构 模块划分  2. 目的 主要是为了练习一个go项目的过程，这里对于消息推到ES这块没有做，不过口子留了 3. 目录结构 logCollectorDemo ├─ .gitignore ├─ env.conf	&#x2F;&#x2F; 配置文件 ├─ go.mod	&#x2F;&#x2F; 包管理 ├─ go.sum ├─ main.go	&#x2F;&#x2F; 主文件 └─ src ├─ api">
+<meta property="og:type" content="website">
+<meta property="og:title" content="【golang练手】 日志收集程序">
+<meta property="og:url" content="https://terence.segofun.com/2020/11/01/2020-11-01-2/index.html">
+<meta property="og:site_name" content="Terence 记录他成长的地方">
+<meta property="og:description" content="【golang练手】 日志收集程序  1. 目录  目录结构 模块划分  2. 目的 主要是为了练习一个go项目的过程，这里对于消息推到ES这块没有做，不过口子留了 3. 目录结构 logCollectorDemo ├─ .gitignore ├─ env.conf	&#x2F;&#x2F; 配置文件 ├─ go.mod	&#x2F;&#x2F; 包管理 ├─ go.sum ├─ main.go	&#x2F;&#x2F; 主文件 └─ src ├─ api">
+<meta property="og:locale">
+<meta property="og:image" content="https://avatars0.githubusercontent.com/u/27192296?s=400&v=4">
+<meta property="article:published_time" content="2020-11-01T08:07:39.000Z">
+<meta property="article:modified_time" content="2020-11-01T08:09:35.040Z">
+<meta property="article:author" content="Terence.Sun">
+<meta property="article:tag" content="language">
+<meta property="article:tag" content="golang">
+<meta property="article:tag" content="practice">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://avatars0.githubusercontent.com/u/27192296?s=400&v=4">
+<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"Terence.Sun","description":"Creator","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"},"url":"https://terence.segofun.com","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4","description":"","author":{"@type":"Person","name":"Terence.Sun","description":"Creator","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"},"inLanguage":{"@type":"Language","alternateName":"en"}},{"@context":"http://schema.org","@type":"Article","articleSection":"","url":"https://terence.segofun.com/2020/11/01/2020-11-01-2/","headline":"【golang练手】 日志收集程序","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4","datePublished":"2020-11-01T08:07:39.000Z","dateModified":"2020-11-01T08:09:35.040Z","keywords":"language,golang,practice","description":"","publisher":{"@type":"Organization","name":"Terence 记录他成长的地方","logo":{"@type":"ImageObject","url":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"}},"author":{"@type":"Person","name":"Terence.Sun","description":"Creator","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"},"inLanguage":{"@type":"Language","alternateName":"en"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://terence.segofun.com/2020/11/01/2020-11-01-2/"}}]</script>
+<link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet"><link href="/styles.43478ea7e28ed563c48b.css" rel="stylesheet">
+<link rel="stylesheet" href="/theme.85fa6fcf4167185c6f4a.css" is="theme">
+
+<script src="/config.5088b084e2b961f4e8e6.js"></script>
+
+<meta name="generator" content="Hexo 5.1.1"></head>
+<body lang="en">
+<is-a></is-a>
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="/runtime.b15aa7186c559b492b7d.js"></script><script src="/polyfills.824ff89b5f3ca4543a31.js"></script><script src="/main.03652fc423a687c817e8.js"></script></body>
+</html>
