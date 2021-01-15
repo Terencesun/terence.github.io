@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>【golang】记录一次go mod在jetbrain 设定的问题 - Terence 记录他成长的地方</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="https://terence.segofun.com/2021/01/15/2021-01-15-01/">
+<link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="写这个主要是记录下编辑器设置go mod相关配置的时候，老忘记的东西。。。 目录结构  当我们新建一个项目的时候，第一件事就是初始化mod，这个时候，我们就以这个mod文件作为项目或包的根 你翻翻mod文件，你可以看到顶上写着module xxx，这不就是说明了这个mod的名字吗 于是我们引用的时候，其实第一层就是以这个module xxx作为根，来找文件的，找不到才去go的根去找    这样，我">
+<meta property="og:type" content="website">
+<meta property="og:title" content="【golang】记录一次go mod在jetbrain 设定的问题">
+<meta property="og:url" content="https://terence.segofun.com/2021/01/15/2021-01-15-01/index.html">
+<meta property="og:site_name" content="Terence 记录他成长的地方">
+<meta property="og:description" content="写这个主要是记录下编辑器设置go mod相关配置的时候，老忘记的东西。。。 目录结构  当我们新建一个项目的时候，第一件事就是初始化mod，这个时候，我们就以这个mod文件作为项目或包的根 你翻翻mod文件，你可以看到顶上写着module xxx，这不就是说明了这个mod的名字吗 于是我们引用的时候，其实第一层就是以这个module xxx作为根，来找文件的，找不到才去go的根去找    这样，我">
+<meta property="og:locale">
+<meta property="og:image" content="https://avatars0.githubusercontent.com/u/27192296?s=400&v=4">
+<meta property="article:published_time" content="2021-01-15T09:21:17.000Z">
+<meta property="article:modified_time" content="2021-01-15T09:33:18.245Z">
+<meta property="article:author" content="Terence.Sun">
+<meta property="article:tag" content="golang">
+<meta property="article:tag" content="tool">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://avatars0.githubusercontent.com/u/27192296?s=400&v=4">
+<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"Terence.Sun","description":"Creator","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"},"url":"https://terence.segofun.com","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4","description":"","author":{"@type":"Person","name":"Terence.Sun","description":"Creator","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"},"inLanguage":{"@type":"Language","alternateName":"en"}},{"@context":"http://schema.org","@type":"Article","articleSection":"","url":"https://terence.segofun.com/2021/01/15/2021-01-15-01/","headline":"【golang】记录一次go mod在jetbrain 设定的问题","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4","datePublished":"2021-01-15T09:21:17.000Z","dateModified":"2021-01-15T09:33:18.245Z","keywords":"golang,tool","description":"","publisher":{"@type":"Organization","name":"Terence 记录他成长的地方","logo":{"@type":"ImageObject","url":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"}},"author":{"@type":"Person","name":"Terence.Sun","description":"Creator","image":"https://avatars0.githubusercontent.com/u/27192296?s=400&v=4"},"inLanguage":{"@type":"Language","alternateName":"en"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://terence.segofun.com/2021/01/15/2021-01-15-01/"}}]</script>
+<link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet"><link href="/styles.43478ea7e28ed563c48b.css" rel="stylesheet">
+<link rel="stylesheet" href="/theme.85fa6fcf4167185c6f4a.css" is="theme">
+
+<script src="/config.efcca17b965cfb8be173.js"></script>
+
+<meta name="generator" content="Hexo 5.1.1"></head>
+<body lang="en">
+<is-a></is-a>
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="/runtime.b15aa7186c559b492b7d.js"></script><script src="/polyfills.824ff89b5f3ca4543a31.js"></script><script src="/main.03652fc423a687c817e8.js"></script></body>
+</html>
